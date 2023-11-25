@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+  	// 1. Declare and initialize an empty multidimensional array.
+let multiDimArray = [];
+
+// 2. Declare and initialize a multidimensional array representing the following matrix.
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// 3. Write a program to print numeric counting from 1 to 10.
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// 4. Write a program to print the multiplication table of any number.
+let tableNumber = prompt("Enter the table number:");
+let tableLength = prompt("Enter the table length:");
+for (let i = 1; i <= tableLength; i++) {
+  console.log(`${tableNumber} * ${i} = ${tableNumber * i}`);
+}
+
+// 5. Write a program to print items of the following array using a for loop.
+let fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// 6. Generate the following series in your browser.
+// a. Counting
+for (let i = 1; i <= 15; i++) {
+  console.log(i);
+}
+// b. Reverse counting
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
+// c. Even
+for (let i = 0; i <= 20; i += 2) {
+  console.log(i);
+}
+// d. Odd
+for (let i = 1; i <= 19; i += 2) {
+  console.log(i);
+}
+// e. Series
+for (let i = 2; i <= 20; i += 2) {
+  console.log(`${i}k`);
+}
+
+// 7. Search by user input in an array.
+let searchItem = prompt("Enter an item to search:");
+let found = false;
+let itemsArray = ["cake", "apple pie", "cookie", "chips", "patties"];
+for (let i = 0; i < itemsArray.length; i++) {
+  if (searchItem.toLowerCase() === itemsArray[i].toLowerCase()) {
+    found = true;
+    break;
+  }
+}
+console.log(found ? "Item found in the list." : "Item not found in the list.");
+
+// 8. Identify the largest number in the given array.
+let arrayA = [24, 53, 78, 91, 12];
+let maxNumber = Math.max(...arrayA);
+console.log("The largest number is:", maxNumber);
+
+// 9. Identify the smallest number in the given array.
+let minNumber = Math.min(...arrayA);
+console.log("The smallest number is:", minNumber);
+
+// 10. Print multiples of 5 ranging 1 to 100.
+for (let i = 1; i <= 20; i++) {
+  console.log(i * 5);
+}
+  </script>
+
+</body>
+
+</html>
